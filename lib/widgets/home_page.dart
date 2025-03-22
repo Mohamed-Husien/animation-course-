@@ -32,9 +32,10 @@ class _HomePageState extends State<HomePage> {
             setState(() {});
           },
           child: AnimatedContainer(
+            curve: Curves.bounceInOut,
             width: w,
             height: h,
-            duration: const Duration(seconds: 1),
+            duration: const Duration(seconds: 2),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(br),
               color: containerColor,
