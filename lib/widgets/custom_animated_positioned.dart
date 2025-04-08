@@ -26,9 +26,10 @@ class _CustomAnimatedPositionedState extends State<CustomAnimatedPositioned> {
             height: 500,
             color: Colors.red,
           ),
-          AnimatedPositioned(
+          AnimatedPositionedDirectional(
+            //useful when app contain more than one language for example Arabic and English
             curve: Curves.bounceInOut,
-            left: spaceLeft,
+            start: spaceLeft,
             top: spaceBottom,
             duration: const Duration(seconds: 2),
             child: InkWell(
@@ -39,8 +40,8 @@ class _CustomAnimatedPositionedState extends State<CustomAnimatedPositioned> {
                 setState(() {});
               },
               onTap: () {
-                spaceLeft = 100;
-                spaceBottom = 100;
+                spaceLeft = 200;
+                spaceBottom = 200;
                 setState(() {});
               },
               child: Container(
